@@ -1,5 +1,5 @@
 var schApp = angular.module('schApp',[
-		'ngRoute', 'ngAnimate', 'schCtrls'
+		'ngRoute', 'ngAnimate', 'schCtrls','schServices'
 	]);
 
 schApp.config(function($routeProvider){
