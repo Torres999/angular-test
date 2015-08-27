@@ -1,6 +1,38 @@
-var bookStoreCtrls = angular.module('bookStoreCtrls', []);
+var schCtrls = angular.module('schCtrls', []);
 
-bookStoreCtrls.controller('HelloCtrl',['$scope', 
+schCtrls.controller('DefaultCtrl',['$scope', 
+	function($scope){
+		$scope.page={
+			name:'Welcome'
+		}
+	}
+]);
+
+schCtrls.controller('UploadfileCtrl',['$scope', 
+	function($scope){
+		$scope.page={
+			name:'UploadfileCtrl '
+		}
+	}
+]);
+
+schCtrls.controller('AccountCtrl',['$scope', 
+	function($scope){
+		$scope.page={
+			name:'AccountCtrl '
+		}
+	}
+]);
+
+schCtrls.controller('UpdateNameCtrl',['$scope', 
+	function($scope){
+		$scope.page={
+			name:'UpdateNameCtrl '
+		}
+	}
+]);
+
+schCtrls.controller('HelloCtrl',['$scope', 
 	function($scope){
 		$scope.book={
 			name:'Hello'
@@ -8,7 +40,7 @@ bookStoreCtrls.controller('HelloCtrl',['$scope',
 	}
 ]);
 
-bookStoreCtrls.controller('ListCtrl',['$scope',
+schCtrls.controller('ListCtrl',['$scope',
 	function($scope){
 		$scope.books=[
 			{name:'Jack',auther:'Lfex'},
