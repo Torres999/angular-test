@@ -1,6 +1,5 @@
 var bookStoreApp = angular.module('bookStoreApp',[
-		'ngRoute', 'ngAnimate', 'bookStoreCtrls', 'bookStoreFilters',
-		'bookStoreServices', 'bookStoreDirectives'
+		'ngRoute', 'ngAnimate', 'bookStoreCtrls'
 	]);
 
 bookStoreApp.config(function($routeProvider){
@@ -9,7 +8,7 @@ bookStoreApp.config(function($routeProvider){
 		controller: 'HelloCtrl'
 	}).when('/list',{
 		templateUrl: 'tpls/bookList.html',
-		controller:'BookListCtrl'
+		controller:'ListCtrl'
 	}).otherwise({
 		redirectTo: '/hello'
 	})
